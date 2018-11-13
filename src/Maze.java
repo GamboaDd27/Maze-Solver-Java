@@ -17,11 +17,15 @@ public class Maze {
 		    .map(s -> s.split(","))
 		    .findFirst()
 		    .get(); 
+		String[] parameters=strArray[0].split(" ");
+		int rows=Integer.parseInt(parameters[1]);
+		int cols=Integer.parseInt(parameters[2]);
+		int startRow=Integer.parseInt(parameters[3]);
+		int startCol=Integer.parseInt(parameters[4]);
+		int endRow=Integer.parseInt(parameters[5]);
+		System.out.println(rows+" "+cols+" "+ startRow+" "+startCol+" "+endRow );
+		char[][] maze=new char[rows][cols];
 		
-		
-		for(int i=0; i<strArray.length;i++) {
-			System.out.println(strArray[i]);
-		}
 	}
 	
 
